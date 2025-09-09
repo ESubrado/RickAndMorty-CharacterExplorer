@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import TransparentBtn from "@/components/TransparentBtn";
+import TransparentBtn from "@/custom/TransparentBtn";
 import { usePathname } from "next/navigation";
 
 const AppNav = () => {
