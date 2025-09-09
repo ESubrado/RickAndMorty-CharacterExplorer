@@ -8,7 +8,7 @@ const AppFooter = () => {
       {/* Rick image on the left */}
       <div className="flex items-center">
        <Image
-            src="/rick.png"
+            src="/rickalt.png"
             alt="Rick icon"
             width={60}
             height={60}
