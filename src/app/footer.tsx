@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RickImage from "./components/RickImage";
+
 
 const AppFooter = () => {
   return (
@@ -14,6 +14,7 @@ const AppFooter = () => {
             height={60}
         />
       </div>
+        {/* Resources and links on the center */}
       <div className="flex flex-col items-start">
         <span className="text-lg px-0 py-4 mb-2 font-semibold">
           <label className="text-lg">Resources</label>
@@ -49,7 +50,7 @@ const AppFooter = () => {
           API Docs →
         </a>
       </div>
-      {/* Resources and links on the right */}
+      {/* empty on the right to balance flex between */}
       <div className="flex items-start">
         <span className="invisible">By: es</span>
       </div>

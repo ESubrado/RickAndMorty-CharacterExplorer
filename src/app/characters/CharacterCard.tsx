@@ -12,12 +12,12 @@ type Character = {
 
 export default function CharacterCard({ character }: { character: Character }) {
   return (
-    <div className="bg-transparent border border-blue-400 rounded-lg shadow-lg p-4 flex flex-col items-center w-44 m-2">
+    <div className="bg-transparent border border-blue-400 rounded-lg shadow-lg p-4 flex flex-col items-center w-56 m-2">
       <Image
         src={character.image}
         alt={character.name}
-        width={90}
-        height={90}
+        width={100}
+        height={100}
         className="rounded-full mb-2"
       />
       <h2 className="text-md font-bold mb-1 text-center">{character.name}</h2>

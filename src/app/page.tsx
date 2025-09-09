@@ -7,14 +7,14 @@ import AppFooter from "./footer";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-8 px-4 pb-20 gap-16 sm:p-20"
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen py-8 px-4 pb-20 gap-8 sm:p-20"
       style={{
         backgroundImage: "url('/background.jpg')", backgroundSize: "cover", backgroundPosition: "center",
         backgroundAttachment: "fixed",
       }}
     >
        {/* Navigation Tab */}
-      <nav className="w-full flex justify-between mb-8">
+      <nav className="w-full flex justify-between mb-4">
         <div className="flex items-center">
           <Image
             src="/rick.png"
