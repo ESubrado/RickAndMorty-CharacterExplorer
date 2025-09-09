@@ -10,7 +10,7 @@ const AppNav = () => {
     <nav className="w-full flex justify-between mb-4">
       <div className="flex items-center">
         <Image
-          src="/rick.png"
+          src="/rickalt.png"
           alt="Rick icon"
           width={40}
           height={40}
