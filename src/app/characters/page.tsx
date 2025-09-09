@@ -7,7 +7,6 @@ import TransparentBtn from "../components/TransparentBtn";
 import useFetch from "../hooks/useFetch";
 import CharacterCard from "./CharacterCard";
 import { useState } from "react";
-import RickImage from "../components/RickImage";
 import AppFooter from "../footer";
 
 export default function Character() {

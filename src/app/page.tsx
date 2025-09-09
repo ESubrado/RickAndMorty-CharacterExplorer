@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import TransparentBtn from "./components/TransparentBtn";
 import AppFooter from "./footer";
-import RickImage from "./components/RickImage";
 
 export default function Home() {
   return (
