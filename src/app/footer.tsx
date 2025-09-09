@@ -15,13 +15,13 @@ const AppFooter = () => {
         />
       </div>
         {/* Resources and links on the center */}
-      <div className="flex flex-col items-start">
-        <span className="text-lg px-0 py-4 mb-2 font-semibold">
+      <div className="flex flex-col items-center text-center gap-2 text-sm">
+        <span className="m-0 p-0 font-semibold">
           <label className="text-lg">Resources</label>
         </span>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://www.linkedin.com/in/essubrado/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -32,7 +32,7 @@ const AppFooter = () => {
             width={16}
             height={16}
           />
-          Contact
+          Contact →
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -48,6 +48,21 @@ const AppFooter = () => {
             height={16}
           />
           API Docs →
+        </a>
+         <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://edgeanalytics-client.onrender.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            aria-hidden
+            src="/globe.svg"
+            alt="Globe icon"
+            width={16}
+            height={16}
+          />
+          Real Time Events Dashboard Project →
         </a>
       </div>
       {/* empty on the right to balance flex between */}

@@ -54,7 +54,7 @@ export default function Character() {
           ) : (
           <>   
             <div className="flex flex-col items-center justify-center">
-                <h1 className="text-2xl text-center font-bold mb-4">Characters</h1>   
+                <h1 className="text-2xl text-center font-bold mb-2">Characters</h1>   
                 <div className="flex flex-col justify-center items-center mx-8 mb-4">
                     {/* Search character input */}
                   <input
@@ -62,7 +62,7 @@ export default function Character() {
                     placeholder="Search by character name..."
                     value={filter}
                     onChange={handleInputChange}
-                    className="mb-6 px-4 py-2 bg-transparent text-gray-50 placeholder-gray-300 focus:outline-none border-0 border-b-2 border-gray-500 focus:border-gray-600 w-72 text-center"
+                    className="mb-4 px-4 py-2 bg-transparent text-gray-50 placeholder-gray-300 focus:outline-none border-0 border-b-2 border-gray-500 focus:border-gray-600 w-72 text-center"
                   />
                   {showError && inputError && (
                     <span className="text-red-400 text-sm mb-3">{inputError}</span>
