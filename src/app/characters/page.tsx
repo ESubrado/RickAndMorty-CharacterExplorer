@@ -86,7 +86,7 @@ export default function Character() {
                   <div className="flex flex-wrap justify-center mx-28">
                     {filteredCharacters.length === 0 ? ( // No characters found message
                       <span className="text-gray-300 text-lg mt-8">
-                        No characters found.
+                        No matching characters.
                       </span>
                     ) : (
                       filteredCharacters
