@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import TransparentBtn from "./components/TransparentBtn";
 import AppFooter from "./footer";
+import AppNav from "./navigation";
 
 export default function Home() {
   return (
@@ -14,22 +14,8 @@ export default function Home() {
       }}
     >
        {/* Navigation Tab */}
-      <nav className="w-full flex justify-between mb-4">
-        <div className="flex items-center">
-          <Image
-            src="/rick.png"
-            alt="Rick icon"
-            width={40}
-            height={40}
-          />
-        </div>   
-        <Link href="/characters" className="text-lg font-medium hover:underline hover:underline-offset-4" >
-           <TransparentBtn variant="contained">
-            Get Started
-          </TransparentBtn>   
-        </Link>  
-      </nav>      
-      
+      <AppNav />
+      {/* Main Content */}      
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="mb-4 flex justify-center w-full">
            <Image
