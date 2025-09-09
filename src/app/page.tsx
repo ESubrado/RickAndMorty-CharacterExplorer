@@ -1,6 +1,10 @@
-import { Button } from "@mui/material";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import TransparentBtn from "./components/TransparentBtn";
+import AppFooter from "./footer";
+import RickImage from "./components/RickImage";
 
 export default function Home() {
   return (
@@ -20,10 +24,10 @@ export default function Home() {
             height={40}
           />
         </div>   
-        <Link href="/characters" className="text-lg font-medium hover:underline hover:underline-offset-4">
-           <Button variant="contained" color="primary" href="#">
+        <Link href="/characters" className="text-lg font-medium hover:underline hover:underline-offset-4" >
+           <TransparentBtn variant="contained">
             Get Started
-          </Button>   
+          </TransparentBtn>   
         </Link>  
       </nav>      
       
@@ -43,64 +47,17 @@ export default function Home() {
           Welcome to the Rick and Morty character explorer!
        </label>
 
-        <div className="flex gap-4 flex-col sm:flex-row"> 
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="/characters"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="flex gap-4 w-full justify-center"> 
+         <Link href="/characters" passHref>
+          <span
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px] cursor-pointer"
           >
             Get Started
-          </a>
+          </span>
+        </Link>
         </div> 
-      </main> 
-      {/* Add this image container just before closing the main div */}
-      <div className="fixed bottom-7 left-4 z-50">
-        <Image
-          src="/rick.png"
-          alt="Rick icon"
-          width={60}
-          height={60}
-        />
-      </div>
-
-      <footer className="row-start-3 items-left justify-left" >         
-          <div className="text-left text-lg font-medium mb-3">
-            <label> Resources </label>   
-          </div> 
-          <div className="flex flex-wrap gap-[34px] justify-between">           
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                aria-hidden
-                src="/file.svg"
-                alt="File icon"
-                width={16}
-                height={16}
-              />
-              Contact
-            </a>       
-            <a
-              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-              href="https://rickandmortyapi.com/documentation/#character"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                aria-hidden
-                src="/globe.svg"
-                alt="Globe icon"
-                width={16}
-                height={16}
-              />
-              API Docs →
-            </a>
-          </div>        
-      </footer>
+      </main>     
+      <AppFooter />
     </div>
   );
 }
