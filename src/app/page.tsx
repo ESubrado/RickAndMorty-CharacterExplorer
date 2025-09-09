@@ -28,7 +28,7 @@ export default function Home() {
           />
         </div>
        
-       <label className="text-center sm:text-left text-2xl sm:text-3xl font-medium max-w-[800px]">
+       <label className="text-center text-2xl sm:text-3xl font-medium max-w-[800px]">
           Welcome to the Rick and Morty character explorer!
        </label>
 
