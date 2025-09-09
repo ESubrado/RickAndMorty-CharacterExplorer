@@ -1,7 +1,7 @@
 "use client";
 
-import useFetch from "../hooks/useFetch";
-import useInputValidation from "../hooks/useInputValidation";
+import useFetch from "@/hooks/useFetch";
+import useInputValidation from "@/hooks/useInputValidation";
 import CharacterCard from "./CharacterCard";
 import AppFooter from "../footer";
 import { useEffect, useState } from "react";
