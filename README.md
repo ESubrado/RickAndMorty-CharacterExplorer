@@ -1,8 +1,8 @@
 ## Description
 
-This a demonstration project that showcases my development skills using [Next.js](https://nextjs.org) which is based in React framework bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). 
+This demonstration project showcases my development skills using [Next.js](https://nextjs.org) which is based in React framework bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). 
 
-The site displays a carefully designed home page and a router link that leads to the page to search characters of one of the most popular contemporary cartoons aired as of the date called Rick and Morty.
+The site displays a carefully designed home page and a router link that leads to the page that searches characters of one of the most popular contemporary cartoons aired as of the date called Rick and Morty.
 
 Character data is sourced from [`Rick and Morty API`](https://rickandmortyapi.com) and the sites requirements are indicated in this [Link](https://docs.hireoverseas.com/Frontend-Developer-HW-Assignment-257eb907ec1e80119d7df1ec49b5ebb4)
 
@@ -25,6 +25,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+Sample test script is also available in this project using Jest and React Testing Library. The script is available under __test__ folder. To run it, type:
+
+```bash
+npm test
+```
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 This project is also deployed in a hosting site called [Render](https://render.com/) and is now live. Visit it by clicking on this site https://rickandmortycharacterexplorer-subrado.onrender.com
@@ -36,7 +42,7 @@ These are the primary features of the web app.
 - Character search functionality using Rick and Morty API as provided.
 - Filtering characters by name with special character validation.
 - Display of character cards (with animation, consistent sizing, and Material UI styling).
-- Responsive design using Tailwind CSS.
+- Responsive design using Tailwind CSS that caters desktop and mobile devices.
 - Transparent navigation and footer components with resource links.
 - Custom hooks for data fetching and input validation.
 - Integration and unit testing setup with Jest and React Testing Library.
@@ -44,7 +50,7 @@ These are the primary features of the web app.
 
 ## Technology Stack
 
-The stack and libraries used in this app are as follows:
+The technology stack and libraries used in this app are as follows:
 
 - Next.js (_React framework for SSR/SSG and routing_)
 - React (_UI library_)
@@ -59,7 +65,8 @@ Other dependencies may include Next.js built-in features and custom hooks for fe
 
 ## Structure and Design
 
-The structure of the project is based of Next.js built-in boiler plate added with custom folders for easy identification for maintainability purposes. 
+The structure of the project is based on the Next.js built-in boiler plate added with extra folders for custom components. All the main components such as navigation, footer, and main pages are added in the app folder. This arrangement is done for optimization and maintainability purposes.
+
 Here's the mapping focused only on folders and files that have significant changes:
 
 - public (_Main storage for media in this case photos_)
@@ -88,7 +95,7 @@ As for the design, initial boiler plate created is preconfigured with styles and
 
 ### Home Page
 
-In this page (page.tsx), I've deleted some of the pre created elements and left only the tailwind's flex classes that serves as the main layout. I've chosen this since it already caters responsive screen size. There are three sections and each is separated Tailwind's flex and row-start-[n]. These are Navigation, Main and Footer. 
+In this page (page.tsx), I've deleted some of the pre created elements and leave only tailwind's flex classes which serves as the main layout. I've chosen this since it already supports responsive screen sizing. There are three sections in the page and each is separated Tailwind's flex and row-start-[n]. These are Navigation, Main and Footer. 
 
 Navigation contains a route to the character search page and the footer contains links for resources. Main for the header image and welcome note.  
 
@@ -96,7 +103,7 @@ Navigation contains a route to the character search page and the footer contains
 
 This is the main search functionality. Using the useFetch hook, I've created a state to get character data from the API and display them initially by iterating the card component (CharacterCard.tsx). The maximum of 14 Cards are initially displayed to represent the first page. This is done using the splice method. 
 
-The page still uses tailwind's flex capabilities derived from the main home page with exception of card iteration that uses the Card Material UI component. The search input is located on center top after the "Characters" text for visibility. I've added a special character filter which is supported by the hook called useInputValidation. I've also added a simple animation on the cards.
+The page still uses tailwind's flex capabilities derived from the main home page with exception of card iteration that uses the Card Material UI component. The search input is located on top center after the "Characters" text. I've added a special character filter which is supported by the hook called useInputValidation. I've also added a simple animation for the cards.
 
 Once a letter is typed in, the input data will first be evaluated by useInputValidation and if it is valid, it will be sent back and fed to the filter method that filters the data. And it will be displayed in the screen.
 
