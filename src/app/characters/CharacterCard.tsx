@@ -12,8 +12,8 @@ type Character = {
 
 export default function CharacterCard({ character }: { character: Character }) {
   return (
-    <div className="bg-transparent border border-blue-400 rounded-lg shadow-lg p-4 flex flex-col items-center w-56 m-2"
-      style={{ width: "180px", minHeight: "240px" }}
+    <div className="bg-transparent border border-blue-400 rounded-lg shadow-lg p-4 flex flex-col items-center w-56 m-2" 
+      data-testid="character-card" style={{ width: "180px", minHeight: "240px" }}
     >
       <Image
         src={character.image}
