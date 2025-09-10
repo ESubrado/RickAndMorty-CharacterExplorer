@@ -31,6 +31,7 @@ const AppFooter = () => {
             alt="File icon"
             width={16}
             height={16}
+            style={{ filter: "invert(1)" }}
           />
           Contact →
         </a>
@@ -46,6 +47,7 @@ const AppFooter = () => {
             alt="Globe icon"
             width={16}
             height={16}
+            style={{ filter: "invert(1)" }}
           />
           API Docs →
         </a>
@@ -61,6 +63,7 @@ const AppFooter = () => {
             alt="Globe icon"
             width={16}
             height={16}
+            style={{ filter: "invert(1)" }}
           />
           Real Time Events Dashboard Project →
         </a>
