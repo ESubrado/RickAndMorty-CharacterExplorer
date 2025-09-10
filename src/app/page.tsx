@@ -16,7 +16,7 @@ export default function Home() {
        {/* Navigation Tab */}
       <AppNav />
       {/* Main Content */}      
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start mb-8 sm:mb-6">
         <div className="mb-4 flex justify-center w-full">
            <Image
             className="dark:invert"
