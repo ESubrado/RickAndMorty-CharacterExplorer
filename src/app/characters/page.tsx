@@ -73,7 +73,8 @@ export default function Character() {
                       {/* Search character input */}
                     <input
                       type="text"
-                      placeholder="Search by character name..."
+                      placeholder="Search by character name"
+                      data-testid="search-character-input"
                       value={filter}
                       onChange={handleInputChange}
                       className="mb-4 px-4 py-2 bg-transparent text-gray-50 placeholder-gray-300 focus:outline-none border-0 border-b-2 border-gray-500 focus:border-gray-600 w-72 text-center"
@@ -92,7 +93,7 @@ export default function Character() {
                       filteredCharacters
                       .slice(0, 14)
                       .map((char: any, idx: number) => (
-                        <div
+                        <div                         
                           key={char.id}
                           className={cardAnimation}
                           style={{
