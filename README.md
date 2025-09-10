@@ -29,6 +29,19 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 This project is also deployed in a hosting site called [Render](https://render.com/) and is now live. Visit it by clicking on this site https://rickandmortycharacterexplorer-subrado.onrender.com
 
+## Features
+These are the primary features of the web app. 
+- Home page with navigation and welcome note.
+- Router link to a character search page.
+- Character search functionality using Rick and Morty API as provided.
+- Filtering characters by name with special character validation.
+- Display of character cards (with animation, consistent sizing, and Material UI styling).
+- Responsive design using Tailwind CSS.
+- Transparent navigation and footer components with resource links.
+- Custom hooks for data fetching and input validation.
+- Integration and unit testing setup with Jest and React Testing Library.
+
+
 ## Technology Stack
 
 The stack and libraries used in this app are as follows:
