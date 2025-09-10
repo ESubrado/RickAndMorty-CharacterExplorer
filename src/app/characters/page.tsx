@@ -57,7 +57,7 @@ export default function Character() {
         {/* Navigation Tab */}
         <AppNav />
         {/* Main Content */}
-        <main className="flex items-center justify-center"> 
+        <main className="flex items-center justify-center mb-8 sm:mb-6"> 
           { loading ? (           
             <div>Loading...</div>             
           ) : (
@@ -84,7 +84,7 @@ export default function Character() {
                     )}
                   </div>
                                   
-                  <div className="flex flex-wrap justify-center mx-28">
+                  <div className="flex flex-wrap justify-center mx-10 lg:mx-28">
                     {filteredCharacters.length === 0 ? ( // No characters found message
                       <span className="text-gray-300 text-lg mt-8">
                         No matching characters.

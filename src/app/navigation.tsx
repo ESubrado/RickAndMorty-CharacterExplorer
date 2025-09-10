@@ -24,8 +24,8 @@ const AppNav = () => {
         </Link>
       ) : (
         <Link href="/" className="text-lg font-medium hover:underline hover:underline-offset-4">
-          <TransparentBtn variant="contained" color="primary">
-            Back to Main Page
+          <TransparentBtn variant="contained">
+            Back to Home
           </TransparentBtn>
         </Link>
       )}
